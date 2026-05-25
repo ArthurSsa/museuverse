@@ -38,14 +38,14 @@ O MuseuVerse é uma experiência 3D interativa que recria parte do acervo do **M
 
 ## 📁 Estrutura do repositório
 
-museuverse/
-├── Assets/             # Assets do projeto Unity
-├── Packages/           # Pacotes Unity
-├── ProjectSettings/    # Configurações Unity
-├── smart-contract/     # Contrato ERC-721 (Solidity)
-├── docs/               # Slides, manual, prints
-├── build/              # Builds WebGL e Windows (gerados)
-└── README.md
+    museuverse/
+    ├── Assets/             # Assets do projeto Unity
+    ├── Packages/           # Pacotes Unity
+    ├── ProjectSettings/    # Configurações Unity
+    ├── smart-contract/     # Contrato ERC-721 (Solidity)
+    ├── docs/               # Slides, manual, prints
+    ├── build/              # Builds WebGL e Windows (gerados)
+    └── README.md
 
 ## 🏃 Como executar localmente
 
