@@ -104,3 +104,14 @@ desktop.ini
 # === Node modules (caso o front trabalhe no repo) ===
 node_modules/
 **/node_modules/
+
+# === Arquivos locais de configuração ===
+CLAUDE.md
+**/CLAUDE.md
+.claude/
+**/.claude/
+*.claude.md
+.cursorrules
+.github-copilot-instructions.md
+.aider*
+.continue/
