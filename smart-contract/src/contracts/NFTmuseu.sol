@@ -29,6 +29,14 @@ contract NFTmuseu is ERC721, ERC721URIStorage, ERC721Enumerable, AccessControl, 
         
     }
 
+    function burn(uint256 tokenId) external {
+        require(
+            ownerOf(tokenId) == msg.sender || hasRole(DEFAULT_ADMIN_ROLE, msg.sender),
+            "NFTmuseu: sem permissao para queimar"
+        );
+        _burn(tokenId);
+    }
+
     function _update(address to, uint256 tokenId, address auth) internal override(ERC721, ERC721Enumerable) returns(address) {
         return super._update(to, tokenId, auth);
     }
