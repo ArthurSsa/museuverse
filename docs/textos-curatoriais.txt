@@ -1,0 +1,59 @@
+═══════════════════════════════════════════
+TEXTOS CURATORIAIS - MuseuVerse
+═══════════════════════════════════════════
+
+──────────────────────────
+1. LUZIA
+──────────────────────────
+ID: luzia
+Título: Luzia
+Cor sugerida do placeholder: branco/marfim
+Posição: (-10, 0.5, 10)
+
+Descrição curta:
+O fóssil humano mais antigo das Américas, com cerca de 11.500 anos.
+
+Descrição longa:
+Luzia é o nome dado ao crânio fóssil de uma mulher que viveu há aproximadamente 11.500 anos, descoberto em 1975 na região de Lagoa Santa, Minas Gerais. Considerado por décadas o esqueleto humano mais antigo das Américas, Luzia se tornou um símbolo da pré-história brasileira e um marco para a paleoantropologia mundial. Suas características morfológicas reacenderam debates sobre as rotas de povoamento do continente americano. Em setembro de 2018, o incêndio que devastou o Museu Nacional do Rio de Janeiro consumiu grande parte do laboratório onde Luzia era guardada. Pesquisadores conseguiram recuperar fragmentos do crânio em meio aos escombros, num esforço heroico de preservação. Luzia não é apenas um fóssil — é a memória mais antiga das Américas, e sua perda parcial representa uma ferida coletiva na história da ciência brasileira.
+
+──────────────────────────
+2. METEORITO DE BENDEGÓ
+──────────────────────────
+ID: bendego
+Título: Meteorito de Bendegó
+Cor sugerida do placeholder: cinza/escuro
+Posição: (10, 0.5, 10)
+
+Descrição curta:
+Um dos maiores meteoritos já encontrados no Brasil, sobrevivente do incêndio de 2018.
+
+Descrição longa:
+Encontrado em 1784 na região do Bendegó, no sertão da Bahia, este meteorito de cerca de 5,3 toneladas é um dos maiores já registrados no Brasil e o segundo maior meteorito ferroso já encontrado em território brasileiro. Sua viagem até o Museu Nacional, no século XIX, foi épica: foram quase 130 quilômetros percorridos em uma carroça de boi adaptada, num feito de engenharia da época. Por mais de um século, o Bendegó foi um dos itens mais admirados do acervo, recebendo gerações de visitantes fascinados por sua origem cósmica. Quando o incêndio de 2018 destruiu o museu, o meteorito foi um dos poucos itens que sobreviveu praticamente intacto às chamas — graças à sua composição de ferro e níquel. Hoje, o Bendegó é símbolo de resistência: uma rocha que atravessou o espaço, sobreviveu a uma viagem improvável e resistiu até mesmo ao fogo que apagou tantas outras memórias.
+
+──────────────────────────
+3. TRONO DE ADANDOZAN
+──────────────────────────
+ID: adandozan
+Título: Trono de Adandozan
+Cor sugerida do placeholder: dourado/marrom
+Posição: (-10, 0.5, -10)
+
+Descrição curta:
+Trono real do Reino do Daomé, presente diplomático do séc. XIX.
+
+Descrição longa:
+O trono pertenceu ao rei Adandozan, soberano do Reino do Daomé — atual Benim, na África Ocidental — entre 1797 e 1818. A peça foi enviada como presente diplomático ao príncipe regente Dom João VI do Brasil, no início do século XIX, como gesto de aliança e respeito entre reinos. Esculpido em madeira e adornado com elementos simbólicos da realeza africana, o trono representa uma das mais importantes conexões materiais entre o Brasil e o continente africano antes mesmo da abolição da escravatura. Para a diáspora africana brasileira, a peça era um testemunho concreto de soberania, riqueza e civilização dos reinos da África pré-colonial — uma narrativa frequentemente apagada pela historiografia oficial. Sua destruição no incêndio de 2018 representa não apenas a perda de um objeto, mas o silenciamento de uma história que precisa continuar sendo contada.
+
+──────────────────────────
+4. SARCÓFAGO DE SHA-AMUN-EM-SU
+──────────────────────────
+ID: shaamun
+Título: Sarcófago de Sha-Amun-em-su
+Cor sugerida do placeholder: azul
+Posição: (10, 0.5, -10)
+
+Descrição curta:
+Sarcófago egípcio do século VIII a.C., tesouro do acervo egiptológico do Brasil.
+
+Descrição longa:
+Sha-Amun-em-su foi uma sacerdotisa cantora do templo de Amon, em Karnak, no Antigo Egito, que viveu por volta do século VIII a.C. — há aproximadamente 2.800 anos. Seu sarcófago, feito em madeira ricamente decorada com hieróglifos e cenas religiosas, foi doado ao imperador Dom Pedro II em 1876, durante uma de suas viagens ao Egito. O sarcófago era considerado um dos itens mais preciosos do acervo egiptológico do Museu Nacional, sendo um raro caso de sarcófago não aberto: a múmia continuava lacrada em seu interior, intocada por mais de 2.800 anos. Os hieróglifos da peça preservavam orações funerárias e o nome da sacerdotisa, garantindo, segundo a crença egípcia, sua vida eterna. O incêndio de 2018 consumiu o sarcófago e se
