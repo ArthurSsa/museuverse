@@ -8,21 +8,36 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
+import "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol";
 
 contract NFTmuseu is ERC721, ERC721URIStorage, ERC721Enumerable, AccessControl, ReentrancyGuard {
-    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+    using MessageHashUtils for bytes32;
+    using ECDSA for bytes32;
     uint256 private _tokenIdCounter;
+    mapping(bytes32 => bool) private _usedSignatures;
+    address private _authorizedSigner;
 
     event NFTMinted(address indexed to, uint256 indexed tokenId, string tokenURI);
 
-    constructor(address initialAdmin) ERC721("Museu Nacional", "MNRIO") {
+    constructor(address initialAdmin, address authorizedSigner) ERC721("Museu Nacional", "MNRIO") {
         _grantRole(DEFAULT_ADMIN_ROLE, initialAdmin);
-        _grantRole(MINTER_ROLE, initialAdmin);
+        _authorizedSigner = authorizedSigner; // Definir o endereço do backend autorizado aqui
     }
 
-    function mintNFT(address to, string memory visitorName) external onlyRole(MINTER_ROLE) nonReentrant {
+    function mintNFT(address to, string memory visitorName, uint256 expiration, bytes memory signature) external nonReentrant {
+        require(expiration > block.timestamp, "NFTmuseu: assinatura expirada");
+        require(to == msg.sender, "NFTmuseu: endereco invalido");
+        require(bytes(visitorName).length > 0 && bytes(visitorName).length < 35, "NFTmuseu: nome do visitante nao pode ser vazio e deve ter menos de 35 caracteres");
+        bytes32 messageHash = keccak256(abi.encodePacked(to, visitorName, expiration));
+        require(!_usedSignatures[messageHash], "NFTmuseu: assinatura ja utilizada");
+        bytes32 ethSignedMessageHash = messageHash.toEthSignedMessageHash();
+        address signer = ethSignedMessageHash.recover(signature);
+        require(signer == _authorizedSigner, "NFTmuseu: assinatura invalida");
+        require(balanceOf(to) == 0, "NFTmuseu: usuario ja possui um NFT");
         uint256 tokenId = _tokenIdCounter++;
         _safeMint(to, tokenId);
+        _usedSignatures[messageHash] = true;
         string memory uri = _buildURI(visitorName, to);
         _setTokenURI(tokenId, uri);
         emit NFTMinted(to, tokenId, uri);
