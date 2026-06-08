@@ -106,3 +106,14 @@ node_modules/
 **/node_modules/
 
 .env
+# === Arquivos locais de configuração ===
+CLAUDE.md
+**/CLAUDE.md
+.claude/
+**/.claude/
+*.claude.md
+.cursorrules
+.github-copilot-instructions.md
+.aider*
+.continue/
+museuverse-unity/Assets/_Project/Models/3d-fire-house-museum-exhibit/source/IE_IFDTestBuildv2.fbx
