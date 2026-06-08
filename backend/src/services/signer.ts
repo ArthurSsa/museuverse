@@ -2,14 +2,6 @@ import {createWalletClient, http} from 'viem';
 import { privateKeyToAccount } from 'viem/accounts';
 import {hardhat} from 'viem/chains';
 
-const account = privateKeyToAccount(process.env.SIGNER_PRIVATE_KEY as `0x${string}`);
-
-const client = createWalletClient({
-    account,
-    chain: hardhat,
-    transport: http(),
-});
-
 const domain = {
     name: 'NFTmuseu',
     version: '1',
@@ -26,6 +18,14 @@ const types = {
 } as const;
 
 export async function signMintRequest(to: `0x${string}`, visitorName: string, expiration: bigint): Promise<`0x${string}`> {
+
+    const account = privateKeyToAccount(process.env.SIGNER_PRIVATE_KEY as `0x${string}`);
+
+    const client = createWalletClient({
+    account,
+    chain: hardhat,
+    transport: http(),
+    });
     const signature = await client.signTypedData({
         domain, types, primaryType: 'MintRequest', message: { to, visitorName, expiration },
     });
