@@ -2,7 +2,7 @@
 
 > **Museu virtual imersivo que preserva digitalmente patrimônios culturais brasileiros perdidos ou em risco.**
 >
-> Hackweb Web3 — Desafio 4 (ExpoVerse) | Entrega: 31/05/2026
+> Hackweb Web3 — Desafio 4 (ExpoVerse) | Entrega: 09/06/2026
 
 ---
 
