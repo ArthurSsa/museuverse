@@ -105,6 +105,7 @@ desktop.ini
 node_modules/
 **/node_modules/
 
+.env
 # === Arquivos locais de configuração ===
 CLAUDE.md
 **/CLAUDE.md
