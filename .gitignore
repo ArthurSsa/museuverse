@@ -104,3 +104,5 @@ desktop.ini
 # === Node modules (caso o front trabalhe no repo) ===
 node_modules/
 **/node_modules/
+
+.env

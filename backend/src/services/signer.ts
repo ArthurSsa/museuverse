@@ -1,11 +1,11 @@
 import {createWalletClient, http} from 'viem';
 import { privateKeyToAccount } from 'viem/accounts';
-import {hardhat} from 'viem/chains';
+import {sepolia} from 'viem/chains';
 
 const domain = {
     name: 'NFTmuseu',
     version: '1',
-    chainId: 31337,
+    chainId: 11155111,
     verifyingContract: process.env.VERIFYING_CONTRACT_ADDRESS as `0x${string}`,
 } as const;
 
@@ -23,7 +23,7 @@ export async function signMintRequest(to: `0x${string}`, visitorName: string, ex
 
     const client = createWalletClient({
     account,
-    chain: hardhat,
+    chain: sepolia,
     transport: http(),
     });
     const signature = await client.signTypedData({
