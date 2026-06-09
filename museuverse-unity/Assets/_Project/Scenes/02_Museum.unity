@@ -2590,7 +2590,7 @@ MonoBehaviour:
   textoNome: {fileID: 997706682}
   textoContagem: {fileID: 73089701}
   botaoClaim: {fileID: 1653255832}
-  urlClaim: 
+  urlClaim: https://museu-verse.netlify.app
   botaoFechar: {fileID: 46639765}
   totalPecas: 4
 --- !u!224 &501930571
@@ -3789,7 +3789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -6385,7 +6385,7 @@ Transform:
   m_GameObject: {fileID: 1245436064}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 289, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
